@@ -1,0 +1,358 @@
+/* Menambahkan Fonts */
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/Poppins-Regular.otf');
+}
+
+@font-face {
+  font-family: 'poppins-light';
+  src: url('../fonts/Poppins-Light.otf');
+}
+
+@font-face {
+  font-family: 'River';
+  src: url('../fonts/River-Adventure.ttf');
+}
+
+@font-face {
+  font-family: 'Variane';
+  src: url('../fonts/Variane-Script.ttf');
+}
+
+/* bintang artinya semua jadi ngasih style buat semua element misalnya kita kasih fonts poppins tapi nanti bisa di timpah dengan style lain */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins-light';
+  box-sizing: border-box;
+}
+
+.fx {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.fluid-container {
+  width: 90vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* HOME */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+#header-top {
+  width: 100%;
+  height: 30px;
+  background: #fff; /* white */
+  position: relative;
+}
+.top-head-col {
+  background: #fff;
+  line-height: 30px;
+  margin-right: 20px;
+  display: inline-block;
+}
+.social-icon {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+.social {
+  color: #555;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 90%;
+}
+
+/* Navbar */
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: #319BCA;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  padding: 15px 10px 10px 70px;
+}
+
+.nav > .nav-header > .nav-title a {
+  color: #fff;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 16px;
+  padding-right: 70px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 18px 10px 17px 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+/* Home */
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+.black-layer {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px center;
+}
+.hero img {
+  position: absolute;
+  bottom:0;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'River';
+  color: #fff;
+  font-size: 80px;
+  letter-spacing: 5px;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  font-family: 'Variane';
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.hero button {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  font-family: 'poppins';
+  background: rgba(240,190,28,0.5);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: .5s;
+}
+.hero button:hover {
+  background:rgb(240,190,28);
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  margin-top: 30px;
+  color: #555;
+  background: url('../img/watermarks-naval.jpg');
+}
+
+footer .title {
+  position: absolute;
+  z-index: 2;
+}
+
+footer .title img {
+  position: absolute;
+  /* top: -5px; */
+  z-index: -1;
+}
+
+footer .title h3 {
+  color: #555;
+  font-size: 24px;
+}
+
+footer .col-1 {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+
+footer .con-phone {
+  margin-top: 55px;
+}
+
+footer .con-phone img {
+  float: left;
+  margin-right: 10px;
+}
+
+footer .con-phone p{
+  display: inline-block;
+
+}
+
+
+footer .con-email {
+  margin-top: 10px;
+}
+
+footer .con-email img {
+  float: left;
+  margin-right: 10px;
+}
+
+footer .con-email p{
+  display: inline-block;
+
+}
+
+/* col 2 */
+
+footer .col-2 {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+.tautan .sub-title {
+  color: #F0BF15;
+  position: relative;
+  font-size: 22px;
+}
+
+.tautan a {
+  color: #555;
+  display: block;
+}
+
+.tautan a:hover {
+  color: #F0BF15;
+}
+
+/* Sosmed */
+footer .col-3 {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+.sosmed .sub-title {
+  color: #F0BF15;
+  position: relative;
+  font-size: 22px;
+}
+
+.sosmed a {
+  color: #555;
+  display: block;
+}
+
+/* Teuapal */
+.sosmed a:hover:nth-child(1n) {
+  color: #F0BF15;
+}
+/* Instagram */
+.sosmed a:hover:nth-child(2n) {
+  color: salmon;
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* Facebook */
+.sosmed a:hover:nth-child(3n) {
+  color: #3B5998;
+}
+/* Path */
+.sosmed a:hover:nth-child(4n) {
+  color: #E52F17;
+}
+/* Twitter */
+.sosmed a:hover:nth-child(5n) {
+  color: #56D7FE;
+}
+/* Youtube */
+.sosmed a:hover:nth-child(6n) {
+  color: red;
+}
+
+
+
+/* col 4 */
+footer .col-4 {
+  text-align: center;
+  width: auto;
+}
+
+.partner .sub-title {
+  color: #F0BF15;
+  position: relative;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+footer .footer-bottom {
+  width: 100%;
+  font-weight: bold;
+  padding-top: 5px;
+  margin-top: 26px;
+  font-size: 14px;
+}
+
+footer .footer-bottom span:nth-child(2) {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
